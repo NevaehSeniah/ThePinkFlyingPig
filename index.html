@@ -1,134 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nevaeh Seniah</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nevaeh Seniah – The Pink Flying Pig</title>
   <style>
+    /* Global styles */
     body {
       font-family: Georgia, serif;
       margin: 0;
       padding: 0;
-      background-color: #fefefe;
-      color: #333;
+      background-color: #f7f2ec;
+      color: #3d2b1f;
+      line-height: 1.6;
     }
-
-    header {
+    header, footer {
       text-align: center;
-      padding: 1.5rem 1rem 1rem;
-      background-color: #fff4f7;
-      border-bottom: 2px solid #e0c6d1;
-    }
-
-    header img {
-      height: 60px;
-    }
-
-    header h1 {
-      margin: 0.3rem 0 0;
-      font-size: 2rem;
-    }
-
-    header p {
-      margin: 0;
-      font-style: italic;
-      font-size: 1.1rem;
-      color: #a84e76;
-    }
-
-    main {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    section {
-      margin-bottom: 2rem;
-    }
-
-    h2 {
-      color: #a84e76;
-      border-bottom: 1px solid #e4cbd1;
-      padding-bottom: 0.2rem;
-    }
-
-    footer {
-      text-align: center;
+      background-color: #e3d5ca;
       padding: 1.5rem 1rem;
-      background-color: #fff4f7;
-      border-top: 2px solid #e0c6d1;
+      border: 2px solid #a1887f;
     }
-
-    footer img {
-      height: 40px;
-      opacity: 0.75;
-    }
-
-    footer p {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #555;
+    header img { height: 60px; }
+    header h1 { margin: 0.5rem 0; font-size: 2.4rem; }
+    header p { margin: 0; font-style: italic; color: #5c4033; }
+    main { max-width: 900px; margin: auto; padding: 1.5rem; }
+    section { margin-bottom: 2rem; background-color: #fff8f0; padding: 1.5rem; border-radius: 8px; border: 1px solid #d0b49f; }
+    section h2 { color: #a84e76; border-bottom: 1px solid #e4cbd1; padding-bottom: 0.3rem; margin-bottom: 1rem; font-size: 1.6rem; }
+    ul { padding-left: 1.2rem; }
+    a { color: #a84e76; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer img { height: 40px; opacity: 0.7; display: block; margin: auto; }
+    footer p { margin-top: 0.5rem; font-size: 0.9rem; color: #5c4033; }
+    /* Gallery grid (photos) */
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); gap: 0.8rem; }
+    .gallery img { width: 100%; border-radius: 6px; }
+    /* Image container watermark overlay */
+    .image-container { position: relative; display: inline-block; }
+    .image-container::after {
+      content: "";
+      position: absolute;
+      bottom: 8px; right: 8px;
+      width: 40px; height: 40px;
+      background: url('images/flying-pig.png') no-repeat center/contain;
+      opacity: 0.45;
+      pointer-events: none;
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <img src="flying-pig.png" alt="Flying Pig Logo">
-    <h1>Nevaeh Seniah</h1>
-    <p>The Pink Flying Pig</p>
-  </header>
 
-  <main>
+<header>
+  <img src="flying-pig.png" alt="Flying Pig Logo" />
+  <h1>Nevaeh Seniah</h1>
+  <p>The Pink Flying Pig</p>
+</header>
+
+<main>
+  <!-- Banner image -->
+  <section>
+    <img src="images/banner.jpg" alt="Farm banner" style="width:100%; border-radius:8px;" />
+  </section>
+
+  <section id="about">
+    <h2>About the Farm</h2>
+    <div class="image-container">
+      <img src="images/about.jpg" alt="Tara on the farm" />
+    </div>
+    <p>I believe the best things take time – just like good compost, slow sunrises, and a well-seasoned cast-iron skillet.
+      Tara, the quirky farm girl, started her all-organic farm in LaGrange, Georgia in 2019. The name is from “Haines Heaven” spelled backwards
+      on a Star Wars‑themed farm. We organically pasture-range Ayam Cemani, naturally raise honeybees, along with a few family pets —
+      a dynamic duo of Leia and Han Solo, the magnificent miniature donkeys — and a vast organic garden.</p>
+  </section>
+
+  <section id="farm-offerings">
+    <h2>Farm Offerings</h2>
+    <p>At Nevaeh Seniah, we organically pasture-range rare Ayam Cemani chickens, naturally raise honeybees, and nurture an abundant organic
+      garden. Our two miniature donkeys, Han and Leia Solo, help with morale (and mischief).</p>
+  </section>
+
   <section id="cottage-baking">
-  <h2>🍪 Cottage Food Baking</h2>
-  <p>Small-batch, gluten-free, and organic baked goods made with love and heritage recipes — like our Farmhouse Chip Cookies and Organic Blackberry Fig and Lavender Jam, made from homegrown fruit and heart.</p>
-</section>
+    <h2>🍪 Cottage Food Baking</h2>
+    <p>Small-batch, gluten-free and organic baked goods made with love and heritage recipes — like Farmhouse Chip Cookies and Organic
+      Blackberry Fig and Lavender Jam, made from homegrown fruit and love.</p>
+  </section>
 
-    <section>
-      <h2>🌿 From Seed to Plate</h2>
-      <p>Everything grown, gathered, or baked is done with time-honored practices and the joy of organic living. From canning jams to pasture-raising Rooster Roulettes, we believe in doing things the slow, honest way.</p>
-    </section>
+  <section id="market-schedule">
+    <h2>Farmers Market Schedule</h2>
+    <p>We are proud to be part of <strong>The Market At The Rail</strong> in LaGrange, Georgia.</p>
+    <ul>
+      <li>📍 Saturday, August 9 – 8 AM – 1 PM</li>
+      <li>📍 Saturday, August 16 – 8 AM – 1 PM</li>
+      <li>📍 Saturday, August 23 – 8 AM – 1 PM</li>
+    </ul>
+  </section>
 
-    <section id="farm-offerings">
-  <h2>Farm Offerings</h2>
-  <p>At Nevaeh Seniah, we organically pasture-range rare Ayam Cemani chickens, naturally raise honeybees, and nurture an abundant organic garden. Our two miniature donkeys, Han and Leia Solo, help with morale (and mischief).</p>
-  <!-- Optional: Icons or photos here -->
-</section>
-    
-    <section id="market-schedule">
-  <h2>Farmers Market Schedule</h2>
-  <p>We are proud to be part of The Market At The Rail in LaGrange, Georgia.</p>
-  <ul>
-    <li>📍 Saturday, August 9 – 8 AM to 1 PM</li>
-    <li>📍 Saturday, August 16 – 8 AM to 1 PM</li>
-    <li>📍 Saturday, August 23 – 8 AM to 1 PM</li>
-    <!-- You can add more dates here -->
-  </ul>
-</section>
+  <section id="instagram-feed">
+    <h2>Follow Along on Instagram</h2>
+    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/NevaehSeniah/" data-instgrm-version="14"></blockquote>
+    <script async src="//www.instagram.com/embed.js"></script>
+  </section>
 
-    <section id="instagram-feed">
-  <h2>Follow Us on Instagram</h2>
-  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/NevaehSeniah/" data-instgrm-version="14"></blockquote>
-  <script async src="//www.instagram.com/embed.js"></script>
-</section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <label>Your Name:<br><input type="text" name="name" required /></label><br><br>
+      <label>Your Email:<br><input type="email" name="_replyto" required /></label><br><br>
+      <label>Message:<br><textarea name="message" rows="5" required></textarea></label><br><br>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Or email directly at <a href="mailto:NevaehSeniah@gmail.com">NevaehSeniah@gmail.com</a> or call/text 843‑902‑6944</p>
+  </section>
 
-    <section id="contact">
-  <h2>Contact Tara</h2>
-  <form action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
-    <label>Your Name: <input type="text" name="name" required></label><br>
-    <label>Your Email: <input type="email" name="_replyto" required></label><br>
-    <label>Message: <textarea name="message" required></textarea></label><br>
-    <button type="submit">Send Message</button>
-  </form>
-  <p>Or email us directly at <a href="mailto:NevaehSeniah@gmail.com">NevaehSeniah@gmail.com</a></p>
-</section>
-    
-  </main>
+  <!-- Gallery placeholder: upload images into /images/gallery/ -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <!-- After uploading images, simply copy filenames below -->
+      <div class="image-container"><img src="images/gallery/photo1.jpg" alt="" /></div>
+      <div class="image-container"><img src="images/gallery/photo2.jpg" alt="" /></div>
+      <div class="image-container"><img src="images/gallery/photo3.jpg" alt="" /></div>
+    </div>
+  </section>
+</main>
 
-  <footer>
-    <img src="flying-pig.png" alt="Flying Pig Logo">
-    <p>&copy; 2025 Nevaeh Seniah, LLC</p>
-  </footer>
+<footer>
+  <img src="flying-pig.png" alt="Flying Pig Logo" />
+  <p>&copy; 2025 Nevaeh Seniah, LLC</p>
+</footer>
+
 </body>
 </html>
