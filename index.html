@@ -1,108 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nevaeh Seniah | The Pink Flying Pig</title>
-    <style>
-        body {
-            font-family: Georgia, serif;
-            background-color: #fffaf3;
-            color: #2f2f2f;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #f8e8dc;
-            text-align: center;
-            padding: 1em 0;
-        }
-        header img, footer img {
-            height: 60px;
-        }
-        nav {
-            background-color: #fae1d2;
-            padding: 1em;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #2f2f2f;
-        }
-        section {
-            padding: 2em;
-            max-width: 800px;
-            margin: auto;
-        }
-        .banner {
-            width: 100%;
-            max-height: 300px;
-            object-fit: cover;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        input, textarea {
-            margin: 0.5em 0;
-            padding: 0.5em;
-            font-size: 1em;
-        }
-        .footer-note {
-            font-size: 0.8em;
-            color: #888;
-        }
-    </style>
+    <title>The Pink Flying Pig</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Top Logo Banner -->
     <header>
-        <img src="IMG_7388.png" alt="Flying Pig Logo">
-        <h1>Nevaeh Seniah</h1>
-        <h3>The Pink Flying Pig</h3>
+        <img src="heartbeat.png" alt="The Pink Flying Pig Banner Logo" class="top-logo">
     </header>
 
-    <img src="Copy of YouTube banner.jpeg" alt="Farm Banner" class="banner">
-
+    <!-- Navigation for Topic Pages -->
     <nav>
-        <a href="#about">About</a>
-        <a href="#cottage">Cottage Foods</a>
-        <a href="#contact">Contact</a>
+        <ul>
+            <li><a href="about.html">About (The Farm & The Quirky Farm Girl)</a></li>
+            <li><a href="ayam-cemani.html">Ayam Cemani</a></li>
+            <li><a href="organic-farming.html">Organic Farming</a></li>
+            <li><a href="certified-beekeeper.html">Certified Beekeeper</a></li>
+            <li><a href="where-to-buy.html">Where To Buy</a></li>
+            <li><a href="sweets-treats.html">Sweets and Treats</a></li>
+            <li><a href="leia-han-solo.html">Leia and Han Solo</a></li>
+            <li><a href="health-wellness.html">Health & Wellness</a></li>
+            <li><a href="bio-security.html">Bio-Security</a></li>
+            <li><a href="meet-the-guardians.html">Meet The Guardians</a></li>
+        </ul>
     </nav>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>I believe the best things take time – just like good compost, slow sunrises, and a well-seasoned cast-iron skillet. Tara, the quirky farm girl, started her all-organic farm in LaGrange, Georgia in 2019. The name is from "Haines Heaven" spelled backwards on a Star Wars-themed farm. We organically pasture-range Ayam Cemani, naturally raise honeybees along with a few family pets, a dynamic duo of Leia and Han Solo the magnificent miniature donkeys, and a vast organic garden.</p>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- Welcome Section -->
+        <section id="welcome">
+            <h1>Welcome to The Pink Flying Pig</h1>
+            <p>Discover our sustainable farm, unique Ayam Cemani chickens, organic honey, and more!</p>
+        </section>
 
-    <section id="cottage">
-        <h2>🍪 Cottage Food Baking</h2>
-        <p>Small-batch, gluten-free and organic baked goods made with love and heritage recipes — like Farmhouse Chip Cookies and Organic Blackberry Fig and Lavender Jam, made from homegrown fruit and love.</p>
-        <p><strong>Cottage Food Baker – Licensed</strong></p>
-    </section>
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <form id="contact-form" action="https://formspree.io/f/NevaehSeniah@gmail.com" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Interested in custom orders or just want to say hello? Reach out!</p>
-        <p>Email: <a href="mailto:nevaehseniah@gmail.com">nevaehseniah@gmail.com</a></p>
-        <p>Call or text: <a href="tel:8439026944">(843) 902-6944</a></p>
-        <form action="mailto:nevaehseniah@gmail.com" method="POST" enctype="text/plain">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message">
-        </form>
-    </section>
+        <!-- Licenses and Certifications -->
+        <section id="certifications">
+            <h2>Licenses & Certifications</h2>
+            <ul>
+                <li>Certified Organic Farmer</li>
+                <li>Certified Beekeeper</li>
+                <li>Woman-Owned Small Business</li>
+            </ul>
+        </section>
+    </main>
 
-    <section id="socials">
-        <h2>Follow Me</h2>
-        <p>Instagram, TikTok, Facebook, X and YouTube: <strong>@NevaehSeniah</strong></p>
-    </section>
-
+    <!-- Footer with Social Media and Bottom Logo -->
     <footer>
-        <img src="IMG_7388.png" alt="Flying Pig Logo">
-        <p class="footer-note">© 2025 Nevaeh Seniah, LLC. All rights reserved.</p>
+        <div class="social-media">
+            <h3>Follow Us</h3>
+            <a href="https://www.instagram.com/nevaehseniah" target="_blank"><img src="instagram.PNG" alt="Instagram"></a>
+            <a href="https://www.threads.net/@nevaehseniah" target="_blank"><img src="threads.jpg" alt="Threads"></a>
+            <a href="https://www.facebook.com/NevaehSeniah" target="_blank"><img src="facebook.PNG" alt="Facebook"></a>
+            <a href="https://www.tiktok.com/@nevaehseniah" target="_blank"><img src="tik.png" alt="TikTok"></a>
+            <a href="https://www.youtube.com/@nevaehseniahllc" target="_blank"><img src="youtube.PNG" alt="YouTube"></a>
+            <a href="https://www.pinterest.com/nevaehseniah" target="_blank"><img src="pinterest.PNG" alt="Pinterest"></a>
+            <a href="https://x.com/NevaehSeniah" target="_blank"><img src="logo-black.png" alt="X"></a>
+        </div>
+        <img src="flying-pig.png" alt="The Pink Flying Pig Footer Logo" class="bottom-logo">
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
