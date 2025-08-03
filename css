@@ -1,22 +1,18 @@
-.image-container {
-  position: relative;
-  display: inline-block;
+/* Top Logo */
+.top-logo {
+    max-width: 300px; /* Adjust if heartbeat.png is larger/smaller */
+    height: auto;
 }
 
-.image-container img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+/* Social Media Icons */
+.social-media img {
+    width: 40px; /* Adjust if your icons are different sizes */
+    height: 40px;
 }
 
-.image-container::after {
-  content: "";
-  background: url('images/flyingpig.png') no-repeat;
-  background-size: 50px;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 50px;
-  height: 50px;
-  opacity: 0.5;
+/* Bottom Logo */
+.bottom-logo {
+    max-width: 200px; /* Adjust if flying-pig.png is larger/smaller */
+    height: auto;
+    margin-top: 20px;
 }
